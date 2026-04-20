@@ -1,0 +1,18 @@
+## 1. Grammar tree
+- What is the camera ? 
+  - The camera is the device that give us a 2D image of the 3D world by applying a certain number of geometry equations that projects the 3D world onto a 2D plane
+  - We can also use some models to apply the inverse a 2D image back to the 3D world.
+- The word "camera" actually come from the "camera obscura" (dark chamber)
+- The way that camere obscura work is that when there's a light source illuminate the 3D object, it will reflect a ray of light through a pinhole to the image plane (or the film).
+- If we call the point that reflect the light is $P(x, y, z)$ and the point on the image plane is $p(u, v)$
+  - If the 3D dimension is $Oijk$ so we have $x = \vec{OP}_i, y = \vec{OP}_j, z = \vec{OP}_k$. The O is at the pinhole.
+  - The $z$ in $P$ is that the distance from $P$ to the pinhole.
+  - The $z'$ in $P$ is that the distance from $P$ to the pinhole, also called f or the focal length of the camera.
+  - The $Ok$  is called optical axis.
+  - $\vec{OP'} = \lambda \vec{OP}$
+  - This is projective projection or perspective model
+  - $x' = \lambda x, \space y' = \lambda y, \space f = \lambda z$ 
+  - $x' = f \frac{x}{z}, \space y' = f \frac{y}{z}$
+  - So the $p$ is now $p(x', y')$
+  - The image got is inverse so we can use mathematic to inverse it again to be right side and it called virtual image.
+  - Some note that are: the same size object but different distance will create the different size in the image, the parallel lines is not parallel in the image, ...
